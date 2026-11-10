@@ -1,3 +1,12 @@
+---
+title: 车醒瞳安
+emoji: 🚗
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 8080
+---
+
 # 车醒瞳安
 
 基于眼部可见性、眼睛状态、头部姿态与时间序列分析的疲劳驾驶风险识别智能体（纯软件原型）。
