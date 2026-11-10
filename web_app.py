@@ -436,7 +436,7 @@ if __name__ == '__main__':
     # 0.0.0.0 让同一局域网设备可访问；需要仅限本机时设为 127.0.0.1。
     app.run(
         host=os.environ.get('CAR_AI_AGENT_HOST', '0.0.0.0'),
-        port=int(os.environ.get('CAR_AI_AGENT_PORT', '5000')),
+        port=int(os.environ.get('CAR_AI_AGENT_PORT', '8080')),
         debug=False,
         ssl_context=('cert.pem', 'key.pem') if __import__('os').path.exists('cert.pem') and __import__('os').path.exists('key.pem') else None,
     )
