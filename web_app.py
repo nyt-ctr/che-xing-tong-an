@@ -438,5 +438,5 @@ if __name__ == '__main__':
         host=os.environ.get('CAR_AI_AGENT_HOST', '0.0.0.0'),
         port=int(os.environ.get('CAR_AI_AGENT_PORT', '5000')),
         debug=False,
-        ssl_context=('cert.pem', 'key.pem'),
+        ssl_context=('cert.pem', 'key.pem') if __import__('os').path.exists('cert.pem') and __import__('os').path.exists('key.pem') else None,
     )
